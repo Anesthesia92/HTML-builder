@@ -12,7 +12,10 @@
   },
   "homepage": "https://github.com/EvgeniiMal/html-builder-black#readme",
   "devDependencies": {
-    "@types/node": "^16.11.4",
+    "@types/axios": "^0.14.0",
+    "@types/colors": "^1.2.1",
+    "@types/koa-compose": "^3.2.5",
+    "@types/node": "^16.11.6",
     "eslint": "^7.32.0"
   }
 }
