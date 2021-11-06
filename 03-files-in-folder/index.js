@@ -11,12 +11,11 @@ async function checkObj () {
         let infoOfFile = path.parse(linkOfFile);
         let fileExt = infoOfFile.ext.slice(1);
         fs.stat(linkOfFile, (err, stats) => {
-          console.log(`${infoOfFile.name} - ${fileExt} -  ${stats.size / 1024}kb`);
+          console.log(`${infoOfFile.name} - ${fileExt} -  ${Math.ceil(stats.size / 1024)}kb`);
         });
       }}
   } catch (err) {
     console.error(err);
   }
 }
-
 checkObj();
